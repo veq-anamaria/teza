@@ -1,0 +1,13 @@
+sqlite> .open project/server/login.db
+
+CREATE TABLE Users (
+    id_user integer primary key AUTOINCREMENT,
+    firstname varchar(255) NOT NULL,
+    lastname varchar(255) NOT NULL,
+    email varchar(255) NOT NULL,
+    nr_tel varchar(255) NOT NULL,
+    password varchar(255) NOT NULL
+);
+
+INSERT INTO Users (firstname, lastname, email, nr_tel, password)
+VALUES( 'Ana',	'Vechiu' , 'vechiu.ana@gmail.com', '078881589', 'ana10');
